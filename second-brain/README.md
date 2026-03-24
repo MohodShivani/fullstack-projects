@@ -20,7 +20,6 @@ Authentication: JWT
 Version Control: Git & GitHub
 
 
-
 🚀 Installation
 
 Clone the repository
@@ -35,7 +34,7 @@ npm run dev
 
 #Environment variables (.env)
 
-PORT=5000
+PORT=3000
 MONGO_URI=<your-mongodb-uri>
 JWT_SECRET=<your-jwt-secret>
 
@@ -65,27 +64,6 @@ DELETE /api/v1/brain/:id – Delete content
 
 POST /api/v1/brain/share – Generate shareable link
 GET /api/v1/brain/:shareLink – Access shared content
-
-
-📂 Project Structure
-
-second-brain/
-│
-├─ backend/
-│  ├─ controllers/
-│  ├─ models/
-│  ├─ routes/
-│  ├─ middleware/
-│  └─ server.ts
-│
-├─ frontend/
-│  ├─ components/
-│  ├─ pages/
-│  ├─ services/
-│  └─ App.tsx
-│
-├─ README.md
-└─ package.json
 
 
 📝 License
