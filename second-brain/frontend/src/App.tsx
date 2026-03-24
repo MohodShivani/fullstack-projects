@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Default route */}
-        <Route path="/" element={<Navigate to="/signin" />} />
+        <Route path="/" element={<Navigate to="/signup" />} />
 
         {/* Corrected routes */}
         <Route path="/signup" element={<Signup />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
 
         {/* Fallback route */}
-        <Route path="*" element={<Navigate to="/signin" />} />
+        <Route path="*" element={<Navigate to="/signup" />} />
       </Routes>
     </BrowserRouter>
   );
