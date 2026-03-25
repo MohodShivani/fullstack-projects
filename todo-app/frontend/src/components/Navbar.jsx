@@ -55,7 +55,7 @@ export default function Navbar() {
               </>
             )}
 
-            <DarkModeToggle />
+            
           </div>
         </div> 
       </div>    
