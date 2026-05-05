@@ -56,14 +56,14 @@ export default function TodoItem({ todo, refresh }) {
         {isEditing ? (
           <button
             onClick={updateTodo}
-            className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-md"
+            className="bg-black text-white px-3 py-1 rounded-md"
           >
             Save
           </button>
         ) : (
           <button
             onClick={() => setIsEditing(true)}
-            className="bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1 rounded-md"
+            className="bg-slate-900 text-white px-3 py-1 rounded-md"
           >
             Edit
           </button>
@@ -71,7 +71,7 @@ export default function TodoItem({ todo, refresh }) {
 
         <button
           onClick={deleteTodo}
-          className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-md"
+          className="bg-slate-900 text-white px-3 py-1 rounded-md"
         >
           Delete
         </button>

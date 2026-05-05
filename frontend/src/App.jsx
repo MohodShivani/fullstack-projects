@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Signup from "./pages/signup";
 import Signin from "./pages/signin";
 import Todos from "./pages/Todos";
-import Navbar from "./components/Navbar";
 
 const isAuthenticated = () => {
   return !!localStorage.getItem("token");
@@ -23,7 +22,6 @@ const AuthRoute = ({ children }) => {
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
 
       <Routes>
         {/* Public Auth Routes */}
@@ -43,6 +41,8 @@ function App() {
             </AuthRoute>
           }
         />
+
+      
 
         {/* Protected Todo Route */}
         <Route

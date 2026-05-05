@@ -5,11 +5,14 @@ export default function TodoForm({ onAdd }) {
   const [title, setTitle] = useState("");
 
   const addTodo = async () => {
-    if (!title.trim()) return;
-
-    await API.post("/todo", { title });
-    setTitle("");
-    onAdd();
+    try{
+      if (!title.trim()) return;
+      await API.post("/todo", { title });
+      setTitle("");
+      onAdd();
+    }catch(err){
+      console.log(err.response.data)
+    }
   };
 
   return (
@@ -27,7 +30,7 @@ export default function TodoForm({ onAdd }) {
       />
       <button
         onClick={addTodo}
-        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition"
+        className="bg-black hover:bg-slate-400 text-white px-4 py-2 rounded-lg transition"
       >
         Add
       </button>

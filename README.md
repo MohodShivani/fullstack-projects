@@ -3,8 +3,6 @@
 A **JWT-authenticated Todo Application** built using the **MERN stack**. 
 Users can securely **sign up, sign in, and manage todos** (add, update, delete). The application follows a clean backend architecture with controllers, routes, middleware, validators, and proper input validation using **Zod**.
 
-This project is suitable for **GitHub portfolio** and **assignment submission**.
-
 ---
 
 ## 🚀 Features
